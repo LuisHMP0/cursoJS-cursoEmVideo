@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // logica 
+
+        // negação === ! ---> APENAS INVERTE O VALOR BOLEANO
+        // conjunção === && ---> SÓ SERÁ VERDADEIRO SE AS DUAS PROPOSIÇÕES FOREM VERDADEIRAS 
+        // disjunção === || ---> SÓ SERÁ FALSO SE AS DUAS PROPOSIÇÕES FOREM FALSAS 
+
+        var numero_teste = Number.parseInt(window.prompt('Coloque um número inteiro entre 0 e 11: '))
+        var teste = (numero_teste < 7)
+        var t2 = teste? 'MENOR QUE SETE' : 'MAIOR QUE SETE' // a interrogação testa se a proposição é falsa ou verdadeira, se for verdadeira vai imprimir MENOR QUE SETE, se for falsa MAIOR QUE SETE.
+        window.alert(`SEU NUMERO É: ${t2}`)
+
+        // praticando...
+        var n1 = Number.parseInt(window.prompt('Quanto é 5 X 5? '))
+        window.alert(n1 == 25? 'CERTO' : 'ERRADO')
+
+        var n2 = Number.parseInt(window.prompt('Qual o resto da divisão 49/8? '))
+        var resto = 49 % 8
+        window.alert(n2 == resto? 'CERTO' : 'ERRADO')
+
+        var s1 = (window.prompt('Qual a capital da paraiba? Responda em minusculo e sem acento!'))
+        window.alert(s1 == 'joao pessoa'? 'CERTO' : 'ERRADO' )
+
+
+
+    </script>
+</body>
+</html>

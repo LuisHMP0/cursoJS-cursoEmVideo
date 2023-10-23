@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Que país você mora? </h1>
+    Diga seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        // OBS: Se atentar na diferença entre "=" e "===". Um atribui um valor o outro testa igualdade!
+        function verificar() {
+            var p = document.getElementById('pais').value; 
+            var res = document.getElementById('res')
+            if (p === "Brasil") {
+            res.innerText = "Brasileiro"
+            } 
+            else {
+            res.innerText = 'estrangeiro'
+            }
+
+        }
+    </script>
+</body>
+</html>

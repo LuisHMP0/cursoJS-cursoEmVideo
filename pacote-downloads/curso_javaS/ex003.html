@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aprendendo Java </title>
+    
+</head>
+<body>
+    <h1> Olá mundo!</h1>
+    <p> Já me livrei da maldição </p>
+    <script>
+        var n1 = window.prompt('Digite um número: ')
+        var n2 = window.prompt('Digite outro número: ')
+        var soma_concatenaçâo = n1 + n2 
+        window.alert(' A soma dos números é: ' + soma_concatenaçâo) 
+        // window.prompt só serve para string, por isso não retornou uma adição e sim uma concatenação;
+
+        window.alert('AGORA VAI!')
+        var n3 = Number.parseInt(window.prompt('Digite um número NOVAMENTE: '))
+        var n4 = Number.parseInt(window.prompt('Digite outro número NOVAMENTE: '))
+        var soma_adição = n3 + n4 
+        window.alert('A ADIÇÃO dos seus números são: ' + soma_adição)
+        // O Number.parseInt serve para usar o window.prompt só que com INTEIROS (números);
+
+        // Posso usar apenas Number(window.prompt) também, e deixar que o própio JS decidir se o valor é inteiro ou real;
+
+
+    </script>
+    
+</body>
+</html> 

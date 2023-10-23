@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos <strong>DOM</strong></h1>
+    <p> Aqui vai o resultado </p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"> Clique em mim </div>
+    <script>
+        // DOM é Document Object Mode 
+        var corpo = document.body // recebendo o body 
+        var titulo = document.getElementsByTagName('h1')[0] // recebendo h1 
+        var p1 = document.getElementsByTagName('p')[0] // recebendo paragrafo 1 
+        var d = document.getElementById('msg') // recebendo div'msg'
+        
+        
+        window.document.write('Está escrito assim: ' + p1.innerText) // reescrevendo na tela o p1 sem formatação 
+        p1.style.color = 'red' // mudando cor do p1
+        titulo.style.color = 'red' // mudando cor h1
+
+    </script>
+</body>
+</html>

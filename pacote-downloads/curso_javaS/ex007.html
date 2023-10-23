@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(window.prompt(' Coloque um número: '))
+        var n2 = Number(window.prompt(' Coloque outro número: '))
+
+        window.alert(`${n1} é maior que ${n2}? ${n1 > n2}`) // maior
+        window.alert(`${n1} é menor que ${n2}? ${n1 < n2}`) // menor
+        window.alert(`${n1} é maior ou igual a ${n2}? ${n1 >= n2}`) // maior ou igual
+        window.alert(`${n1} é menor ou igual a ${n2}? ${n1 <= n2}`) // menor ou igual
+        window.alert(`${n1} é igual a ${n2}? ${n1 == n2}`) // igual
+        window.alert(`${n1} é diferente a ${n2}? ${n1 != n2}`) // diferente
+
+        // logica 
+
+        // negação === ! ---> APENAS INVERTE O VALOR BOLEANO
+        // conjunção === && ---> SÓ SERÁ VERDADEIRO SE AS DUAS PROPOSIÇÕES FOREM VERDADEIRAS 
+        // disjunção === || ---> SÓ SERÁ FALSO SE AS DUAS PROPOSIÇÕES FOREM FALSAS 
+
+        var numero_teste = Number.parseInt(window.prompt('Coloque um número inteiro entre 0 e 11: '))
+        var teste = (0 < numero_teste < 7)
+        var t2 = teste? 'MENOR QUE SETE' : 'MAIOR QUE SETE' 
+        window.alert(`SEU NUMERO É: ${t2}`)
+
+    </script>
+</body>
+</html>

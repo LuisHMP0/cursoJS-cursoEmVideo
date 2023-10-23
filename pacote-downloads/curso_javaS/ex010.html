@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#interacao {           
+            background-color: rgb(33, 33, 231);
+            color: black;
+            font: 15pt arial;
+            width: 600px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 4%;
+            justify-content: center;
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="interacao" > 
+        Interaja...
+    </div>
+    <script>
+        var int = window.document.getElementById('interacao') // Pegar elementos da div 'interacao'
+        int.addEventListener('click', clicar) // evento para click
+        int.addEventListener('mouseenter', entrar) // entrada do mouse na div
+        int.addEventListener('mouseout', sair) // saida do mouse da div 
+
+        function clicar(){ // oque irá acontecer quando clicar
+            int.innerText = 'Clicou!'
+            int.style.background = 'red'
+        }
+        function entrar(){ // oque irá acontecer quando entrar com o mouse
+            int.innerText = 'Clique para mudar a cor'
+            
+        }
+        function sair(){ // oque irá acontecer quando sair com o mouse
+            int.innerText = 'Interaja...'
+            int.style.background = 'rgb(33, 33, 231)' 
+        }
+        
+    </script>
+</body>
+</html>
